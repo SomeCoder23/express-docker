@@ -21,7 +21,7 @@ services:
     restart: always
     environment:
       - PORT=80
-      - DB_HOST=db
+      - DB_HOST=mysql
       - DB_USER=root
       - DB_PASSWORD=$DB_PASSWORD
       - DB_NAME=express-docker
