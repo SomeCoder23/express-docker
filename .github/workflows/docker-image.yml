@@ -23,6 +23,6 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/SomeCoder23/express-docker:$(date +%s)
+      run: docker build . --file Dockerfile --tag ghcr.io/somecoder23/express-docker:$(date +%s)
 
 
