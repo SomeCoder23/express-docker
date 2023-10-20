@@ -29,7 +29,7 @@ sudo usermod --append --groups docker github
 sudo usermod --append --groups docker ubuntu
 sudo chown github:github -R /home/app
 
-github_pubkey='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ6CpPtrg3J1YtrzbAE+RSoBHeuncXhJwqH9Xx6xh456 22111905@students.hebron.edu'
+github_pubkey='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHesg8cj8kNsLVxjfhaJAkyc8fLmupEV60T0TpgmFrF3 22111905@students.hebron.edu'
 
 sudo -u github sh -c "mkdir -p /home/app/.ssh && echo $github_pubkey > /home/app/.ssh/authorized_keys"
 
